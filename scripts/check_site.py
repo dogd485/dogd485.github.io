@@ -22,6 +22,11 @@ REPOSITORY_FILES = {'README.md', '.github/workflows/pages.yml', 'scripts/check_s
 
 # Keep earlier published downloads for direct links and cached signed feeds.
 ARCHIVED_DOWNLOADS = {
+    'downloads/SealionHome-0.9.60-vehicle-release.apk':
+        (33374505, '5bacb9aebfeac6416cb821c552dfe825bb5e63213af6517725d392f66f0a5e98'),
+    'downloads/SealionLink-0.8.39-phone-release.apk':
+        (24385104, '6c98f25284bdfd739d692e1ffd159043d20f0f73504feadf58fe9f1e65f7c08c'),
+
     'downloads/SealionLink-0.8.38-phone-release.apk':
         (24385104, '6a4fd89ab7bff52f4d3875a0a12514f79bf0e502caf40105791e3904dc0a9efd'),
     'downloads/SealionHome-0.9.59-vehicle-release.apk':
