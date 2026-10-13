@@ -9,7 +9,7 @@ import shutil
 import subprocess
 import tempfile
 
-BASE_URL = 'https://dogd485.github.io/'
+BASE_URL = 'https://rimin-launcher.github.io/'
 PUBLIC_KEY = 'MIIBojANBgkqhkiG9w0BAQEFAAOCAY8AMIIBigKCAYEAu5UEs3D7N56OxVLXLHLUYqAxovN/AcBNStbTtrGZg3FJkGkqY2XbK1JBnU9z4UuaUi5k6hPIoKihoRxNzNAdaizLwub4giapoPNcf/M8q9G52h1/+2HyZbGsK8TZpEyvhg6E5GhC3GbAgmtwTW0YDZFF+43BmgypieKKHDE7aKPl+wq22V+1JHrzI8jaRmiOwyhTQ3ZJTqo0tEl2HRZSvtSmJ4p3aAFwdCBYgGibikfcwAoKCMtz2bvJ6fPv/PNLxEXLpwbmin5OOmuRGqJyIPGSQyXrelFz4wuqrHsYNcjVvczxlxOteTVmkWR2HbmyQZC8akMpomqjGqpbOed1e4TQolZjU18ZtnxDgfOmr84KA/0OUW/fvhJq5L9EJF1NanfRRXlCw1l/zAZ7sXIecQlPEIxi9ivenWDY+pA+DDx3OP7dmdYlhNJ2qnrU0i/ZWIp33Xnw4QSLBZ0aeoRFrHNQmjCz1jr5GGyHNSsHOPcjCVqSsGv3B4VeymQIGOMXAgMBAAE='
 CERTIFICATE = '8fc45e48e4fe6af28aca5989ee19072a98fa6859498182e62e6c471638ca5858'
 STATIC_FILES = {
@@ -22,6 +22,12 @@ REPOSITORY_FILES = {'README.md', '.github/workflows/pages.yml', 'scripts/check_s
 
 # Keep earlier published downloads for direct links and cached signed feeds.
 ARCHIVED_DOWNLOADS = {
+    'downloads/SealionLink-0.8.43-phone-release.apk':
+        (24352336, 'a2671487269e9c9e805a12b590ace9f01a72fc31a621a8f72d4ff00ef5b15ba3'),
+
+    'downloads/SealionHome-0.9.66-vehicle-release.apk':
+        (33358211, '21a98b85362ef3384fac737138ab681997c52bdffc7ce2e13f1a896b7d776d82'),
+
     'downloads/SealionLink-0.8.42-phone-release.apk':
         (24352336, '353a1c4e65dff88d0d57e11d764c96dbb25cf7ba8c3464d11b51433ee9690783'),
 
