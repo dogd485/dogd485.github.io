@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "date": "2026-10-13",
+  "vehicle": {
+    "versionName": "0.9.56",
+    "versionCode": 137,
+    "file": "downloads/SealionHome-0.9.56-vehicle-release.apk",
+    "bytes": 33325353,
+    "sha256": "6cd865e1ebc7d81d10b5f3d12078d5485a2d596f5d9bb0198924bb9e83f4830e"
+  },
+  "phone": {
+    "versionName": "0.8.37",
+    "versionCode": 38,
+    "file": "downloads/SealionLink-0.8.37-phone-release.apk",
+    "bytes": 24385104,
+    "sha256": "8968d4549408bb776b1837c9fd20ce5373f8717fc0368f8a7010de317870a271"
+  }
+}
