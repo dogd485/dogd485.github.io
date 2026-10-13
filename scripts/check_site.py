@@ -20,6 +20,13 @@ STATIC_FILES = {
 }
 REPOSITORY_FILES = {'README.md', '.github/workflows/pages.yml', 'scripts/check_site.py'}
 
+# Keep earlier published downloads for direct links and cached signed feeds.
+ARCHIVED_DOWNLOADS = {
+    'downloads/SealionHome-0.9.56-vehicle-release.apk':
+        (33325353, '6cd865e1ebc7d81d10b5f3d12078d5485a2d596f5d9bb0198924bb9e83f4830e'),
+}
+
+
 
 def require(value, message):
     if not value:
@@ -119,6 +126,12 @@ def check(site, repository=None):
                 'Signed feed differs from the public APK or install identity')
         require(valid_notes(payload.get('changelog')), 'Invalid public release notes')
         allowed.add(filename)
+    for name, (size, digest) in ARCHIVED_DOWNLOADS.items():
+        if name in inventory:
+            path = inventory[name]
+            require(path.stat().st_size == size and hashlib.sha256(path.read_bytes()).hexdigest() == digest,
+                    'Archived public APK differs from its previously verified release')
+            allowed.add(name)
     require(set(inventory) == allowed, 'Unexpected files in public website output')
     if repository is not None:
         root_files = files(repository, ignore_git=True)
