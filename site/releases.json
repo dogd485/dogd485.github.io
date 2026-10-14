@@ -9,10 +9,10 @@
     "sha256": "17fbee1a373ce303e78d25fe735900024f459f8cad3c7fe4030809948383f6d6"
   },
   "phone": {
-    "versionName": "0.8.44",
-    "versionCode": 45,
-    "file": "downloads/SealionLink-0.8.44-phone-release.apk",
+    "versionName": "0.8.45",
+    "versionCode": 46,
+    "file": "downloads/SealionLink-0.8.45-phone-release.apk",
     "bytes": 24352336,
-    "sha256": "84eef83443083b5fca452f3ff8a65cb7ed905dc6e6f10dbb114efd6bff5293d2"
+    "sha256": "c89aa2f62f7fd30bf04f74cc7fa65dac58954a7321975f36f39047125e618434"
   }
 }
